@@ -1,41 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo-jose.png" type="image/x-icon">
+    <title>Challenge codificador e decodificador</title>
 </head>
 <body>
-    <header>
-        <img src="./assets/Logo.png" alt="logo do cabeçalho">
-    </header>
+    <main class="main-container">
+        <header class="cabecalho">
+            <img src="img/logo.png" alt="Logo">
+        </header>
 
-    <main>
-        <div class="container">
-            <h2 class="container__texto">Digite seu Texto</h2>
-            <div>
-            <p class="container__paragrafo">Apenas letras minúsculas e sem acento</p>
-                <div class="chute container__botoes">
-                <button onclick="" class="container__botao">Criptografar</button>
-                <button onclick="" id="" class="container__botao2">descriptografar</button>
+        <div class="container-input">
+            <input type="text" id="input-texto" placeholder="Digite seu texto aqui...">
+
+            <div class="botoes-aviso">
+                <span id="aviso">Apenas letras minúsculas sem acento.</span>
+                <div class="botoes">
+                    <button onclick="criptografar()" class="botao">Cirptografar</button>
+                    <button onclick="descriptografar()" class="botao" disabled id="descrip">Descriptografar</button>
                 </div>
             </div>
         </div>
 
-        <div class="container__lateral">
-            <img src="./assets/Rectangle1.png">
-            <img src="./assets/pessoaLupa.jpg" alt="Pessoa olhando pela lupa">
-            <div>
-                <h1 class="container__observacao">Nenhuma mensagem encontrada</h1>
-                <p class="container__conteudo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <div class="container-texto-criptografado">
+            <div class="output" id="output">
+                
+            </div>
+            <img src="img/buscando.png" alt="Personagem feminina de anime buscando com a lupa" id="img-texto">
+            <div class="mensagem">
+                <h1 id="mensagemH1">Nenhuma mensagem encontrada.</h1>
+                <span id="mensagemSpam">Digite um texto que você deseja criptografar.</span>
             </div>
         </div>
-            
     </main>
-
-    <footer class="rodape">
-        <p>Desenvolvido por Daniel Nunes.</p>
+    <footer>
+        <div class="footer-content">
+            <h3>challenge alura</h3>
+            <p>Criptografar e descriptografar textos, projeto desenvolvido por: Daniel Nunes</p>
+            <ul class="redes-sociais">
+                <li><a href="https://www.linkedin.com/in/danielnunesme/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://github.com/danielnunesme" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+        </div>
     </footer>
-  
+    <script src="app.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
