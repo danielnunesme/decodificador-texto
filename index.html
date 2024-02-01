@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <body>
     <main class="main-container">
         <header class="cabecalho">
-            <img src="img/logo.png" alt="Logo">
+            <img src="./assets/Logologo.png" alt="Logo">
         </header>
 
         <div class="container-input">
@@ -19,7 +19,7 @@
             <div class="botoes-aviso">
                 <span id="aviso">Apenas letras minúsculas sem acento.</span>
                 <div class="botoes">
-                    <button onclick="criptografar()" class="botao">Cirptografar</button>
+                    <button onclick="criptografar()" class="botao">Criptografar</button>
                     <button onclick="descriptografar()" class="botao" disabled id="descrip">Descriptografar</button>
                 </div>
             </div>
@@ -29,17 +29,16 @@
             <div class="output" id="output">
                 
             </div>
-            <img src="img/buscando.png" alt="Personagem feminina de anime buscando com a lupa" id="img-texto">
+            <img src="./assets/Buscando.jpg" alt="Personagem buscando com a lupa" id="img-texto">
             <div class="mensagem">
-                <h1 id="mensagemH1">Nenhuma mensagem encontrada.</h1>
-                <span id="mensagemSpam">Digite um texto que você deseja criptografar.</span>
+                <h1 id="mensagemH1"></h1>
+                <span id="mensagemSpam"></span>
             </div>
         </div>
     </main>
     <footer>
         <div class="footer-content">
-            <h3>challenge alura</h3>
-            <p>Criptografar e descriptografar textos, projeto desenvolvido por: Daniel Nunes</p>
+            <p>Codificador de textos, projeto desenvolvido por: Daniel Nunes</p>
             <ul class="redes-sociais">
                 <li><a href="https://www.linkedin.com/in/danielnunesme/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
                 <li><a href="https://github.com/danielnunesme" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
