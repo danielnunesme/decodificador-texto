@@ -48,3 +48,14 @@ function descriptografar() {
   }
 
 
+function copiar() {
+    const resultText = textoCriptografia;
+    navigator.clipboard.writeText(resultText)
+    .then(()=> {
+        alert("Texto copiado para área de transferência!")
+    })
+    .catch(err => {
+        console.error('Erro ao copiar para a área de transferência: ', err);
+    });
+    
+}
