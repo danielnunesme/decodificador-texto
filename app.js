@@ -1,4 +1,9 @@
 var inputTexto = document.querySelector('#input-texto');
+var mensagemCriptH1 = 'A mensagem foi encriptada.';
+var mensagemCriptSpan = 'Clique em descriptografar para a mensagem voltar ao normal.';
+var mensagemDescripth1 = 'A mensagem foi descriptada.';
+var mensagemDescriptSpan = 'Clique em criptografar caso queira encriptá-la novamente.'
+
 exibirMensagemInicial()
 
 function exibirTextoNaTela(tag,texto){
@@ -8,7 +13,7 @@ function exibirTextoNaTela(tag,texto){
 
 function exibirMensagemInicial(){
     exibirTextoNaTela('h1','Nenhuma mensagem encontrada.');
-    exibirTextoNaTela('span','Digite um texto que você deseja criptografar.');
+    exibirTextoNaTela('span','');
 }
 
 function criptografar() {
@@ -21,7 +26,8 @@ function criptografar() {
     exibirTextoNaTela('h1','A mensagem foi encriptada.');
     exibirTextoNaTela('span','Clique em descriptografar para a mensagem voltar ao normal.');
     document.getElementById('output').innerHTML = '<textarea id="texto-secreto" readonly>' + textoCriptografia + '</textarea>' + '<button onclick="copiar()" class="botao-copiar">Copiar</button>';
-    console.log(textoCriptografia);
+    document.getElementById("mensagemH1").innerHTML = mensagemCriptH1;
+    document.getElementById("mensagemSpam").innerHTML = mensagemCriptSpan;
     document.getElementById('descrip').removeAttribute('disabled');
     
 }
@@ -36,7 +42,9 @@ function descriptografar() {
       exibirTextoNaTela('h1','A mensagem foi descriptada.');
       exibirTextoNaTela('span','Clique em criptografar caso queira encriptá-la novamente.');
       document.getElementById('output').innerHTML = '<textarea id="texto-secreto" readonly>' + textoCriptografia + '</textarea>' + '<button onclick="copiar()" class="botao-copiar">Copiar</button>';
-      console.log(textoCriptografia);
+      document.getElementById("mensagemH1").innerHTML = mensagemDescriptH1;
+      document.getElementById("mensagemSpam").innerHTML = mensagemDescriptSpan;
+      document.getElementById('descrip').setAttribute('disabled',true);
   }
 
 

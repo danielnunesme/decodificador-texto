@@ -57,15 +57,15 @@ body {
 .container-texto-criptografado{
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 800px;
+    width: 420px;
+    height: 750px;
     border-radius: 32px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     background-color: white;
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    margin: 2%;
+    margin: 4%;
 }
 
 .container-texto-criptografado img {
