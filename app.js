@@ -22,6 +22,7 @@ function criptografar() {
     exibirTextoNaTela('span','Clique em descriptografar para a mensagem voltar ao normal.');
     document.getElementById('output').innerHTML = '<textarea id="texto-secreto" readonly>' + textoCriptografia + '</textarea>' + '<button onclick="copiar()" class="botao-copiar">Copiar</button>';
     console.log(textoCriptografia);
+    document.getElementById('descrip').removeAttribute('disabled');
     
 }
 
@@ -34,12 +35,8 @@ function descriptografar() {
       .replace(/ufat/g, "u");
       exibirTextoNaTela('h1','A mensagem foi descriptada.');
       exibirTextoNaTela('span','Clique em criptografar caso queira encriptá-la novamente.');
-      return texto
+      document.getElementById('output').innerHTML = '<textarea id="texto-secreto" readonly>' + textoCriptografia + '</textarea>' + '<button onclick="copiar()" class="botao-copiar">Copiar</button>';
+      console.log(textoCriptografia);
   }
 
 
-
-  function limparCampo() {
-    document.getElementById('mensagemH1').remove;
-    document.getElementById('mensagemSpam').remove;
-}
