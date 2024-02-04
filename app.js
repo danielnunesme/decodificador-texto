@@ -4,17 +4,6 @@ var mensagemCriptSpan = 'Clique em descriptografar para a mensagem voltar ao nor
 var mensagemDescripth1 = 'A mensagem foi descriptada.';
 var mensagemDescriptSpan = 'Clique em criptografar caso queira encriptá-la novamente.'
 
-exibirMensagemInicial()
-
-function exibirTextoNaTela(tag,texto){
-    let campo = document.querySelector(tag);
-    campo.innerHTML= texto;
-}
-
-function exibirMensagemInicial(){
-    exibirTextoNaTela('h1','Nenhuma mensagem encontrada.');
-    exibirTextoNaTela('span','');
-}
 
 function criptografar() {
     var textoCript = inputTexto.value;
@@ -23,13 +12,10 @@ function criptografar() {
     .replace(/a/g, "ai")
     .replace(/o/g, "ober")
     .replace(/u/g, "ufat");
-    exibirTextoNaTela('h1','A mensagem foi encriptada.');
-    exibirTextoNaTela('span','Clique em descriptografar para a mensagem voltar ao normal.');
     document.getElementById('output').innerHTML = '<textarea id="texto-secreto" readonly>' + textoCriptografia + '</textarea>' + '<button onclick="copiar()" class="botao-copiar">Copiar</button>';
     document.getElementById("mensagemH1").innerHTML = mensagemCriptH1;
     document.getElementById("mensagemSpam").innerHTML = mensagemCriptSpan;
     document.getElementById('descrip').removeAttribute('disabled');
-    
 }
 
 function descriptografar() {
@@ -39,14 +25,11 @@ function descriptografar() {
       .replace(/ai/g, "a")
       .replace(/ober/g, "o")
       .replace(/ufat/g, "u");
-      exibirTextoNaTela('h1','A mensagem foi descriptada.');
-      exibirTextoNaTela('span','Clique em criptografar caso queira encriptá-la novamente.');
       document.getElementById('output').innerHTML = '<textarea id="texto-secreto" readonly>' + textoCriptografia + '</textarea>' + '<button onclick="copiar()" class="botao-copiar">Copiar</button>';
       document.getElementById("mensagemH1").innerHTML = mensagemDescriptH1;
       document.getElementById("mensagemSpam").innerHTML = mensagemDescriptSpan;
       document.getElementById('descrip').setAttribute('disabled',true);
   }
-
 
 function copiar() {
     const resultText = textoCriptografia;
