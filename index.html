@@ -16,11 +16,12 @@
         <div class="container-input">
             <textarea id="input-texto" placeholder="Digite seu texto aqui..."></textarea>
 
-            <div class="botoes-aviso">
+            <div class="botoes-aviso" id="botao-copiar">
                 <span id="aviso">Apenas letras minúsculas sem acento.</span>
-                <div class="botoes">
-                    <button onclick="criptografar()" class="botao">Criptografar</button>
+                <div class="botoes" >
+                    <button onclick="criptografar()" class="botao" id="criptografar">Criptografar</button>
                     <button onclick="descriptografar()" class="botao" disabled id="descrip">Descriptografar</button>
+                    <button onclick="copiar()" class="botao-copiar" id = "copiar">Copiar</button>
                 </div>
             </div>
         </div>
@@ -33,6 +34,7 @@
             <div class="mensagem">
                 <h1 id="mensagemH1">Nenhuma mensagem encontrada</h1>
                 <span id="mensagemSpam">Digite um texto que você deseja criptografar.</span>
+                <p id="areaTransferencia"> </p>
             </div>
         </div>
     </main>

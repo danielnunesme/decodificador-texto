@@ -20,7 +20,9 @@ function validarTexto() {
     } else {
         // Se não houver correspondências, o texto é válido
         botaoCriptografar.disabled = false;
+      
     }
+    document.getElementById("areaTransferencia").innerText = '';
 }
 
 function criptografar() {
@@ -35,6 +37,7 @@ function criptografar() {
     document.getElementById("mensagemSpam").innerHTML = mensagemCriptSpan;
     document.getElementById('descrip').removeAttribute('disabled');
     document.getElementById('copiar').style.display = 'block';
+    
 }
 
 function descriptografar() {
