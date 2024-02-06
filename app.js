@@ -13,6 +13,12 @@ inputTexto.addEventListener('input', validarTexto);
 
 function validarTexto() {
     var texto = inputTexto.value;
+    document.getElementById("areaTransferencia").innerText = '';
+    setTimeout(() => {
+    document.getElementById("mensagemH1").innerText = mensagemPadraoH1;
+    document.getElementById("mensagemSpan").innerText = mensagemPadraoSpan;
+    document.getElementById('copiar').style.display = 'none';
+    }, 100);
     // Expressão regular para verificar se há letras maiúsculas ou caracteres especiais
     var regex = /[A-Z]|[^a-zA-Z\s]/;
     var botaoCriptografar = document.getElementById('criptografar');
@@ -24,8 +30,7 @@ function validarTexto() {
         botaoCriptografar.disabled = false;
       
     }
-
-    var botaoCriptografar = document.getElementById('descrip');
+    botaoCriptografar = document.getElementById('descrip');
     if (regex.test(texto)) {
         // Se a expressão regular encontrar correspondências, o texto é inválido
         botaoCriptografar.disabled = true; 
@@ -34,12 +39,6 @@ function validarTexto() {
         botaoCriptografar.disabled = false;
       
     }
-
-    document.getElementById("areaTransferencia").innerText = '';
-    document.getElementById("mensagemH1").innerText = mensagemPadraoH1;
-    document.getElementById("mensagemSpan").innerText = mensagemPadraoSpan;
-    
-    
 }
 
 function criptografar() {
@@ -50,8 +49,8 @@ function criptografar() {
     .replace(/o/g, "ober")
     .replace(/u/g, "ufat");
     inputTexto.value = textoCriptografia;
-    document.getElementById("mensagemH1").innerHTML = mensagemCriptH1;
-    document.getElementById("mensagemSpam").innerHTML = mensagemCriptSpan;
+    document.getElementById("mensagemH1").innerText = mensagemCriptH1;
+    document.getElementById("mensagemSpan").innerText = mensagemCriptSpan;
     document.getElementById('descrip').removeAttribute('disabled');
     document.getElementById('copiar').style.display = 'block';
     
@@ -65,8 +64,8 @@ function descriptografar() {
       .replace(/ober/g, "o")
       .replace(/ufat/g, "u");
       inputTexto.value = textoCriptografia;
-      document.getElementById("mensagemH1").innerHTML = mensagemDescripth1;
-      document.getElementById("mensagemSpam").innerHTML = mensagemDescriptSpan;
+      document.getElementById("mensagemH1").innerText = mensagemDescripth1;
+      document.getElementById("mensagemSpan").innerText = mensagemDescriptSpan;
       document.getElementById('descrip').setAttribute('disabled',true);
       
   }
