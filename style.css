@@ -194,6 +194,10 @@ button:disabled:hover {
     cursor: not-allowed;
 }
 
+#descrip:disabled {
+    cursor: not-allowed;
+}
+
 
 footer {
     background: var(--Light-blue-light-blue-100, #F3F5FC);
