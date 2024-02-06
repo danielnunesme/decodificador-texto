@@ -6,6 +6,8 @@ var mensagemDescriptSpan = 'Clique em criptografar caso queira encriptá-la nova
 var areaTransferencia = 'Texto copiado para área de transferência!';
 var erroAreaTrannsferencia = 'Erro ao copiar para a área de transferência: ';
 var textoCriptografia;
+var mensagemPadraoH1 = 'Nenhuma mensagem encontrada';
+var mensagemPadraoSpan = 'Digite um texto que você deseja criptografar.';
 
 inputTexto.addEventListener('input', validarTexto);
 
@@ -22,7 +24,22 @@ function validarTexto() {
         botaoCriptografar.disabled = false;
       
     }
+
+    var botaoCriptografar = document.getElementById('descrip');
+    if (regex.test(texto)) {
+        // Se a expressão regular encontrar correspondências, o texto é inválido
+        botaoCriptografar.disabled = true; 
+    } else {
+        // Se não houver correspondências, o texto é válido
+        botaoCriptografar.disabled = false;
+      
+    }
+
     document.getElementById("areaTransferencia").innerText = '';
+    document.getElementById("mensagemH1").innerText = mensagemPadraoH1;
+    document.getElementById("mensagemSpan").innerText = mensagemPadraoSpan;
+    
+    
 }
 
 function criptografar() {
