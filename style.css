@@ -288,12 +288,14 @@ footer {
         margin-top: 0;
     }
 
-    .botoes,
-    .botao-copiar {
+    .botoes {
         max-width: auto;
         max-height: auto;
-        
         display: flex;
+    }
+
+    .botao-copiar{
+        display: none;
     }
 
     .footer-content p {
