@@ -21,8 +21,8 @@ body {
 }
 
 .cabecalho img {
-    max-width: 750px;
-    max-height: 50px;
+    max-width: 46.87rem;
+    max-height: 3.12rem;
     width: auto;
     height: auto;
 }
@@ -33,7 +33,7 @@ body {
     justify-content: space-between;
     margin-top: 10%;
     align-items: center;
-    width: 750px;
+    width: 46.87rem;
     height: 750;
     
     }
@@ -44,9 +44,9 @@ body {
     font-size: 25px;
     font-style: normal;
     font-weight: 300;
-    line-height: 48px;
-    width: 500px;
-    height: 500px;
+    line-height: 3rem;
+    width: 31.25rem;
+    height: 31.25rem;
     resize: vertical;
     border: none;
     outline: none;
@@ -63,9 +63,9 @@ body {
 .container-texto-criptografado{
     display: flex;
     flex-direction: column;
-    width: 420px;
-    height: 750px;
-    border-radius: 42px;
+    width: 26.25rem;
+    height: 46.87rem;
+    border-radius: 2.62rem;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     background-color: white;
     align-items: center;
@@ -84,13 +84,14 @@ body {
 }
 
 .container-texto-criptografado h1{
-    font-size: 25px;
+    font-size: 1.56rem;
     margin-top: -50%;
 }
 
 .container-texto-criptografado span {
     text-align: center;
-    font-size: 16px;
+    margin-top: 100%;
+    font-size: 1rem;
 }
 
 .container-texto-criptografado h1, span, p {
@@ -99,9 +100,9 @@ body {
 }
 
 .container-texto-criptografado p {
-    margin-top: 40px;
+    margin-top: 10%;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.56rem;
 }
 
 .output {
@@ -273,18 +274,18 @@ footer {
     }
 
     .container-texto-criptografado {
-        width: 50%;
+        width: auto;
         height: auto;
-        margin: 4% auto;
+        margin: auto;
         display: flex;
         flex-direction: column;
-        border-radius: px;
+        border-radius: 19px;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         background-color: white;
         align-items: center;
         justify-content: space-around;
         text-align: center;
-        margin: -45px;
+        margin: -2.81rem;
         
     }
 
