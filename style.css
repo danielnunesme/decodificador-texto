@@ -254,10 +254,11 @@ footer {
     color: var(--Dark-blue-dark-blue-300, #0A3871);
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1100px) {
     .main-container {
         flex-direction: column;
         align-items: center;
+
     }
 
     .container-input {
@@ -267,38 +268,82 @@ footer {
 
     .container-input textarea {
         width: auto;
-        height: auto; /* Ajuste conforme necessário */
-        font-size: 20px; /* Ajuste conforme necessário */
+        height: auto; 
+        font-size: 25px;
     }
 
     .container-texto-criptografado {
-        width: auto;
-        height: auto; /* Ajuste conforme necessário */
-        margin: 4% auto; /* Ajuste conforme necessário */
+        width: 50%;
+        height: auto;
+        margin: 4% auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        background-color: white;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        margin: -45px;
+        
     }
 
     .container-texto-criptografado img {
         max-width: auto;
         max-height: auto;
-        margin-top: 1%;
-    }
+        margin-top: -1%;
+        width: 16rem;
+        height: auto;
+        box-shadow: 0 2px 1px -2px;
+        }
 
     .container-texto-criptografado h1 {
-        font-size: 20px; /* Ajuste conforme necessário */
+        font-size: 100%; 
         margin-top: 0;
+    }
+
+    .container-texto-criptografado span{
+        font-size: 90%;
+        margin-top: 0;
+    }
+
+    .container-texto-criptografado p {
+        padding: 10px;
+        text-align: center;
+        font-size: 100%;
     }
 
     .botoes {
         max-width: auto;
         max-height: auto;
         display: flex;
+        margin-bottom: 82px;
+        display: flex;
+        width: 350px;
+        align-items: flex-start;
+        gap: 4px;
+        justify-content: space-between;
     }
 
     .botao-copiar{
         display: none;
-    }
+        max-width: auto;
+        max-height: auto;
+        width: 350px;
+        align-items: flex-start;
+        gap: 4px;
+        justify-content: space-between;
+     }
 
-    .footer-content p {
-        max-width: 90%;
+    
+     footer {
+        background: var(--Light-blue-light-blue-100, #F3F5FC);
+        height: auto;
+        width: 100vw;
+        padding-top: 10%;
+        color: var(--Dark-blue-dark-blue-300, #0A3871);
+    }
+     .footer-content p {
+        max-width: 100%;
     }
 }
