@@ -75,8 +75,8 @@ body {
     }
 
 .container-texto-criptografado img {
-    max-width: 260%;
-    max-height: 260%;
+    max-width: auto;
+    max-height: auto;
     width: auto;
     height: auto;
     box-shadow: 0 2px 1px -2px;
@@ -293,7 +293,7 @@ footer {
         max-width: auto;
         max-height: auto;
         margin-top: -1%;
-        width: 16rem;
+        width: auto;
         height: auto;
         box-shadow: 0 2px 1px -2px;
         }
