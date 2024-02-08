@@ -21,7 +21,7 @@ Essencialmente, este código oferece uma interface para que os usuários insiram
 
 
 ## 🌐 Acessar o projeto
-O projeto encontra-se finalizado.
+O projeto está em quase pronto.
 [Em breve veja o deploy por aqui]()🔗
 
 ## 🛠️ Abrir e rodar
