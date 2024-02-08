@@ -262,9 +262,15 @@ footer {
 
     }
 
+    .cabecalho {
+        display: flex;
+        padding: 8%;
+    }
+    
+
     .container-input {
         width: 90%;
-        margin-top: 5%;
+        margin-top: 11%;
     }
 
     .container-input textarea {
@@ -286,6 +292,7 @@ footer {
         justify-content: space-around;
         text-align: center;
         margin: -2.81rem;
+        flex-direction: column-reverse;
         
     }
 
@@ -296,7 +303,7 @@ footer {
         width: auto;
         height: auto;
         box-shadow: 0 2px 1px -2px;
-        }
+    }
 
     .container-texto-criptografado h1 {
         font-size: 100%; 
@@ -305,13 +312,16 @@ footer {
 
     .container-texto-criptografado span{
         font-size: 90%;
+        margin-left: 1%;
+        text-align: right;
         margin-top: 0;
     }
 
     .container-texto-criptografado p {
-        padding: 10px;
+        padding: 0.62rem;
         text-align: center;
-        font-size: 100%;
+        font-size: 95%;
+        margin-top: 0;
     }
 
     .botoes {
@@ -340,8 +350,8 @@ footer {
      footer {
         background: var(--Light-blue-light-blue-100, #F3F5FC);
         height: auto;
-        width: 100vw;
-        padding-top: 10%;
+        width: 100%;
+        padding-top: 15%;
         color: var(--Dark-blue-dark-blue-300, #0A3871);
     }
      .footer-content p {
