@@ -14,31 +14,27 @@ inputTexto.addEventListener('input', validarTexto);
 function validarTexto() {
     var texto = inputTexto.value;
     document.getElementById("areaTransferencia").innerText = '';
-    setTimeout(() => {
     document.getElementById("mensagemH1").innerText = mensagemPadraoH1;
     document.getElementById("mensagemSpan").innerText = mensagemPadraoSpan;
     document.getElementById('copiar').style.display = 'none';
-    }, 100);
+    
     // Expressão regular para verificar se há letras maiúsculas ou caracteres especiais
     var regex = /[A-Z]|[^a-zA-Z\s]/;
     var botaoCriptografar = document.getElementById('criptografar');
     if (regex.test(texto)) {
-        // Se a expressão regular encontrar correspondências, o texto é inválido
         botaoCriptografar.disabled = true; 
     } else {
-        // Se não houver correspondências, o texto é válido
         botaoCriptografar.disabled = false;
       
     }
     botaoCriptografar = document.getElementById('descrip');
     if (regex.test(texto)) {
-        // Se a expressão regular encontrar correspondências, o texto é inválido
         botaoCriptografar.disabled = true; 
     } else {
-        // Se não houver correspondências, o texto é válido
         botaoCriptografar.disabled = false;
       
     }
+    
 }
 
 function criptografar() {
