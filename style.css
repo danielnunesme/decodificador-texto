@@ -304,7 +304,7 @@ footer {
         max-width: auto;
         max-height: auto;
         margin-top: -1%;
-        width: 450px;
+        width: 400px;
         height: auto;
         box-shadow: 0 2px 1px -2px;
         justify-content: center;
@@ -339,15 +339,16 @@ footer {
     display: flex;
     margin-bottom: 30px;
     display: flex;
-    align-items: flex-start;
     gap: 4px;
     justify-content: center;
+    align-items: center;
     font-size: 60%;
     }
 
     .botao-copiar{
     display: none;
     justify-content: center;
+    align-items: center;
     width: 8.65rem;
     padding: 19px;
     gap: 0.62rem;
@@ -361,6 +362,7 @@ footer {
     .botao {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 8.65rem;
     padding: 19px;
     gap: 0.62rem;
