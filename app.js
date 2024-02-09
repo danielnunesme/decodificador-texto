@@ -18,6 +18,8 @@ function validarTexto() {
     document.getElementById("mensagemSpan").innerText = mensagemPadraoSpan;
     document.getElementById('copiar').style.display = 'none';
     
+    
+
     // Expressão regular para verificar se há letras maiúsculas ou caracteres especiais
     var regex = /^[A-Za-z][a-z]*$/;
     var botaoCriptografar = document.getElementById('criptografar');
@@ -25,14 +27,12 @@ function validarTexto() {
         botaoCriptografar.disabled = true; 
     } else {
         botaoCriptografar.disabled = false;
-      
     }
     botaoCriptografar = document.getElementById('descrip');
-    if (!regex.test(texto)) {
+    if (!regex.test(texto) || onclick.criptografar()) {
         botaoCriptografar.disabled = true; 
     } else {
         botaoCriptografar.disabled = false;
-      
     }
     
 }
