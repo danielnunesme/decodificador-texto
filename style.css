@@ -276,6 +276,7 @@ footer {
         resize: vertical;
         border: none;
         outline: none; 
+        justify-content: center;
     }
 
     .container-input textarea {
@@ -295,6 +296,7 @@ footer {
         background-color: white;
         align-items: center;
         flex-direction: column-reverse;
+        justify-content: center;
         
     }
 
@@ -305,13 +307,15 @@ footer {
         width: 19.55rem;
         height: auto;
         box-shadow: 0 2px 1px -2px;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .container-texto-criptografado h1 {
         font-size: 0.85rem; 
         margin-top: 20%;
+        text-align: center;
         margin: 1%;
+        justify-content: center;
     }
 
     .container-texto-criptografado span{
@@ -320,6 +324,7 @@ footer {
         text-align: center;
         margin-top: 1rem;
         margin-right: 1rem;
+        justify-content: center;
     }
 
     .container-texto-criptografado p {
@@ -327,22 +332,22 @@ footer {
         text-align: center;
         font-size: 95%;
         margin-top: 0;
+        justify-content: center;
     }
 
     .botoes {
     display: flex;
     margin-bottom: 82px;
     display: flex;
-    
     align-items: flex-start;
     gap: 4px;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 60%;
     }
 
     .botao-copiar{
     display: none;
-    justify-content: space-around;
+    justify-content: center;
     width: 3.125rem;
     padding: 0.29rem;
     gap: 0.62rem;
