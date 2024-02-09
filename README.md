@@ -21,11 +21,8 @@ Essencialmente, este código oferece uma interface para que os usuários insiram
 
 
 ## 🌐 Acessar o projeto
-O projeto está em quase pronto.
-[Em breve veja o deploy por aqui]()🔗
-
-## 🛠️ Abrir e rodar
-O projeto encontra-se finalizado.
+O projeto está pronto.
+[Deploy:](https://danielnunesme.github.io/decodificador-texto/)🔗
 
 ## 👥 Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests ou relatar problemas.
