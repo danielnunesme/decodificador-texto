@@ -21,7 +21,7 @@ function validarTexto() {
     
 
     // Expressão regular para verificar se há letras maiúsculas ou caracteres especiais
-    var regex = /^[A-Za-z][a-z]*$/;
+    var regex = /^[A-Za-z][a-z\s]*$/;
     var botaoCriptografar = document.getElementById('criptografar');
     if (!regex.test(texto)) {
         botaoCriptografar.disabled = true; 
@@ -34,6 +34,14 @@ function validarTexto() {
     } else {
         botaoCriptografar.disabled = false;
     }
+
+    inputTexto.addEventListener('paste', function() {
+        setTimeout(function() {
+            texto = inputTexto.value;
+            botaoCriptografar.disabled = !regex.test(texto);
+            botaoDescriptografar.disabled = !regex.test(texto);
+        }, 0);
+    });
     
 }
 
