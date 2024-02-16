@@ -17,11 +17,11 @@ body {
 
 .cabecalho {
     display: flex;
-    padding: 2%;
+    padding: 1%;
 }
 
 .cabecalho img {
-    max-width: 46.87rem;
+    max-width: 10.87rem;
     max-height: 2.12rem;
     width: auto;
     height: auto;
@@ -34,25 +34,26 @@ body {
     margin-top: 10%;
     align-items: center;
     width: 40.87rem;
-    height: 440px;
+    height: 465px;
     font-size: 80%;
     
     }
 
-.container-input textarea {
-    background: var(--Light-blue-light-blue-100, #F3F5FC);
-    color: var(--Dark-blue-dark-blue-300, #0A3871);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 2rem;
-    width: 25.25rem;
-    height: 31.25rem;
-    resize: vertical;
-    border: none;
-    outline: none;   
-    
-}
+    .container-input textarea {
+        background: var(--Light-blue-light-blue-100, #F3F5FC);
+        color: var(--Dark-blue-dark-blue-300, #0A3871);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2rem;
+        width: 25.25rem;
+        height: 17rem;
+        resize: vertical;
+        outline: none;   
+        border-radius: 8px;
+        border: solid 3px var(--Dark-blue-dark-blue-300, #0A3871);
+        
+    }
 
 #input-texto::placeholder {
     color: var(--Dark-blue-dark-blue-300, #0A3871);
@@ -280,9 +281,11 @@ footer {
     }
 
     .container-input textarea {
-        width: auto;
-        height: auto; 
+        width: 18rem;
+        height: 11rem; 
         font-size: 20px;
+        border-radius: 8px;
+        border: solid 3px var(--Dark-blue-dark-blue-300, #0A3871);
        
     }
 
