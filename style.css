@@ -31,10 +31,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 10%;
+    margin-top: 6%;
     align-items: center;
-    width: 40.87rem;
-    height: 465px;
+    width: 47.87rem;
+    height: 495px;
     font-size: 80%;
     
     }
@@ -47,7 +47,7 @@ body {
         font-weight: 300;
         line-height: 2rem;
         width: 25.25rem;
-        height: 17rem;
+        height: 20rem;
         resize: vertical;
         outline: none;   
         border-radius: 8px;
@@ -270,7 +270,7 @@ footer {
     
 
     .container-input {
-        margin-top: auto;
+        margin-top: 5%;
         font-size: 70%;
         line-height: 0.90rem;
         height: 18.25rem;
@@ -281,8 +281,9 @@ footer {
     }
 
     .container-input textarea {
-        width: 18rem;
+        width: 23rem;
         height: 11rem; 
+        margin: 0.9rem;
         font-size: 20px;
         border-radius: 8px;
         border: solid 3px var(--Dark-blue-dark-blue-300, #0A3871);
@@ -290,34 +291,37 @@ footer {
     }
 
     .container-texto-criptografado {
-        width: 700px;
-        height: auto;
-        margin: -75px;
+        width: 23rem;
+        height: 20rem;
+        margin: -0.9rem;
         display: flex;
-        border-radius: 18px;
+        border-radius: 8px;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         background-color: white;
         align-items: center;
         flex-direction: column-reverse;
         justify-content: center;
+        border: solid 3px var(--Dark-blue-dark-blue-300, #0A3871);
+        
         
     }
 
     .container-texto-criptografado img {
         max-width: auto;
         max-height: auto;
-        margin-top: -1%;
-        width: 400px;
+        margin-top: 5%;
+        width: 250px;
         height: auto;
         box-shadow: 0 2px 1px -2px;
         justify-content: center;
+        
     }
 
     .container-texto-criptografado h1 {
-        font-size: 0.85rem; 
-        margin-top: 20%;
+        font-size: 0.75rem; 
+        margin-top: 1%;
         text-align: center;
-        margin: 1%;
+        margin: 1rem;
         justify-content: center;
     }
 
@@ -331,9 +335,9 @@ footer {
     }
 
     .container-texto-criptografado p {
-        padding: 0.62rem;
+        padding: -1rem;
         text-align: center;
-        font-size: 95%;
+        font-size: 65%;
         margin-top: 0;
         justify-content: center;
     }
