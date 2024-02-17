@@ -257,33 +257,27 @@ footer {
 }
 
 @media (max-width: 1200px) {
+    
+       
     .main-container {
         flex-direction: column;
         align-items: center;
+        padding: 10%;
+        
 
     }
 
-    .cabecalho {
-        display: flex;
-        padding: auto;
-    }
     
-
     .container-input {
-        display: flex;
         margin-top: 5%;
         font-size: 70%;
         line-height: 0.90rem;
         height: 18.25rem;
-        resize: vertical;
-        border: none;
-        outline: none; 
+        
     }
 
     .container-input textarea {
-        display: flex;
-        justify-content: center;
-        width: 45rem;
+        width: 26rem;
         height: 39rem; 
         font-size: 20px;
         border-radius: 8px;
@@ -292,17 +286,15 @@ footer {
     }
 
     .container-texto-criptografado {
-        width: 45rem;
+        width: 26rem;
         height: 22rem;
         margin-top: 3rem;
         border-radius: 8px;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         background-color: white;
-        align-items: center;
-        flex-direction: column-reverse;
-        justify-content: center;
         border: solid 3px var(--Dark-blue-dark-blue-300, #0A3871);
-        
+        justify-content: center;
+        flex-direction: column-reverse;
         
     }
 
@@ -311,10 +303,9 @@ footer {
         max-height: auto;
         margin-top: 5%;
         width: 250px;
-        height: auto;
+       
         box-shadow: 0 2px 1px -2px;
-        justify-content: center;
-        
+               
     }
 
     .container-texto-criptografado h1 {
@@ -322,7 +313,6 @@ footer {
         margin-top: 1%;
         text-align: center;
         margin: 1rem;
-        justify-content: center;
     }
 
     .container-texto-criptografado span{
@@ -331,7 +321,7 @@ footer {
         text-align: center;
         margin-top: 1rem;
         margin-right: 1rem;
-        justify-content: center;
+    
     }
 
     .container-texto-criptografado p {
@@ -410,4 +400,5 @@ footer {
      .footer-content p {
         max-width: 100%;
     }
+
 }
