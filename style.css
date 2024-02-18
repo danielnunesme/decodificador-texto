@@ -257,148 +257,105 @@ footer {
 }
 
 @media (max-width: 1200px) {
-    
-       
     .main-container {
         flex-direction: column;
         align-items: center;
-        padding: 10%;
-        
-
     }
 
-    
     .container-input {
-        margin-top: 5%;
-        font-size: 70%;
-        line-height: 0.90rem;
-        height: 18.25rem;
+        width: 0px;
+        margin-top: 2%;
         
     }
 
     .container-input textarea {
-        width: 26rem;
-        height: 39rem; 
+        justify-content: center;
+        width: 25rem;
+        height: 30rem; 
         font-size: 20px;
         border-radius: 8px;
         border: solid 3px var(--Dark-blue-dark-blue-300, #0A3871);
-       
     }
 
     .container-texto-criptografado {
-        width: 26rem;
-        height: 22rem;
-        margin-top: 3rem;
+        width: 25rem;
+        height: 20rem;
+        margin-top: -6rem;
         border-radius: 8px;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         background-color: white;
-        border: solid 3px var(--Dark-blue-dark-blue-300, #0A3871);
-        justify-content: center;
+        align-items: center;
         flex-direction: column-reverse;
-        
+        justify-content: center;
+        border: solid 3px var(--Dark-blue-dark-blue-300, #0A3871);
     }
 
     .container-texto-criptografado img {
         max-width: auto;
         max-height: auto;
-        margin-top: 5%;
-        width: 250px;
-       
-        box-shadow: 0 2px 1px -2px;
-               
+        margin-top: 1%;
     }
 
     .container-texto-criptografado h1 {
-        font-size: 0.75rem; 
-        margin-top: 1%;
-        text-align: center;
-        margin: 1rem;
-    }
-
-    .container-texto-criptografado span{
-        font-size: 0.65rem;
-        margin: 1rem;
-        text-align: center;
-        margin-top: 1rem;
-        margin-right: 1rem;
-    
-    }
-
-    .container-texto-criptografado p {
-        padding: -1rem;
-        text-align: center;
-        font-size: 65%;
-        margin-top: 0;
-        justify-content: center;
+        font-size: 20px; /* Ajuste conforme necessário */
+        margin-top: 10%;
     }
 
     .botoes {
-    display: flex;
-    margin-bottom: -40px;
-    display: flex;
-    gap: 4px;
-    justify-content: center;
-    align-items: center;
-    font-size: 60%;
+        gap: 4px;
+        justify-content: center;
+        align-items: center;
+        font-size: 60%;
+    }
     }
 
     .botao-copiar{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 7.10rem;
-    padding: 19px;
-    gap: 0.62rem;
-    border-radius: 0.50rem;    
-    background: var(--Dark-blue-dark-blue-300, #0A3871);
-    color: white;
-    font-size: 13px;
-    border: solid 1px var(--Dark-blue-dark-blue-300, #0A3871);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 7.10rem;
+        padding: 19px;
+        gap: 0.62rem;
+        border-radius: 0.50rem;    
+        background: var(--Dark-blue-dark-blue-300, #0A3871);
+        color: white;
+        font-size: 13px;
+        border: solid 1px var(--Dark-blue-dark-blue-300, #0A3871);
     }
 
     .botao {
     
-    justify-content: center;
-    align-items: center;
-    width: 7.10rem;
-    padding: 19px;
-    gap: 0.62rem;
-    border-radius: 0.50rem;    
-    background: var(--Dark-blue-dark-blue-300, #0A3871);
-    color: white;
-    font-size: 13px;
-    border: solid 1px var(--Dark-blue-dark-blue-300, #0A3871);
-        
-    }
-    
-    .botao:hover {
-        background: white;
-        color: var(--Dark-blue-dark-blue-300, #0A3871);
-        border: solid 1px var(--Dark-blue-dark-blue-300, #0A3871);
-    }
-    
-    button:disabled {
-        background-color: gray;
-        border: solid 1px gray;
-    }
-    
-    button:disabled:hover {
-        background-color: gray;
+        justify-content: center;
+        align-items: center;
+        width: 7.10rem;
+        padding: 19px;
+        gap: 0.62rem;
+        border-radius: 0.50rem;    
+        background: var(--Dark-blue-dark-blue-300, #0A3871);
         color: white;
-        border: solid 1px gray;
-    }
-
-    
-     footer {
-        background: var(--Light-blue-light-blue-100, #F3F5FC);
-        height: auto;
-        width: 100%;
+        font-size: 13px;
+        border: solid 1px var(--Dark-blue-dark-blue-300, #0A3871);
+            
+        }
         
-        color: var(--Dark-blue-dark-blue-300, #0A3871);
-        margin-top: 90px;
-    }
-     .footer-content p {
-        max-width: 100%;
+        .botao:hover {
+            background: white;
+            color: var(--Dark-blue-dark-blue-300, #0A3871);
+            border: solid 1px var(--Dark-blue-dark-blue-300, #0A3871);
+        }
+        
+        button:disabled {
+            background-color: gray;
+            border: solid 1px gray;
+        }
+        
+        button:disabled:hover {
+            background-color: gray;
+            color: white;
+            border: solid 1px gray;
+        }
+
+    .footer-content p {
+        max-width: 90%;
     }
 
-}
