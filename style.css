@@ -103,7 +103,7 @@ body {
 .container-texto-criptografado p {
     margin-top: 10%;
     text-align: center;
-    font-size: 1.56rem;
+    font-size: 0.90rem;
 }
 
 .output {
@@ -201,50 +201,34 @@ button:disabled:hover {
 
 
 footer {
+    display: flex;
     background: var(--Light-blue-light-blue-100, #F3F5FC);
     height: auto;
     width: 100%;
-    padding-top: -100px;
     color: var(--Dark-blue-dark-blue-300, #0A3871);
-    margin-top: -27px;
+    justify-content: center;
+    
+    
 }
 
 .footer-content {
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
-}
-
-.footer-content h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
+    width: 30rem;
+   
 }
 
 .footer-content p {
     max-width: 31.25rem;
     line-height: 0.1rem;
-    font-size: 0.67rem;
-}
-
-.redes-sociais {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-
-.redes-sociais li{
-    margin: 0 10px;
+    font-size: 0.77rem;
 }
 
 .redes-sociais a{
     text-decoration: none;
     color: #000;
+    
 }
 
 .redes-sociais a{
@@ -257,20 +241,29 @@ footer {
 }
 
 @media (max-width: 1200px) {
+
+    .cabecalho {
+        display: flex;
+        padding: 5%;
+    }
+
     .main-container {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
     .container-input {
         width: 0px;
         margin-top: 2%;
+        margin-left: 2.9%;
+        
         
     }
 
     .container-input textarea {
-        justify-content: center;
-        width: 25rem;
+        
+        width: 24rem;
         height: 30rem; 
         font-size: 20px;
         border-radius: 8px;
@@ -278,9 +271,10 @@ footer {
     }
 
     .container-texto-criptografado {
-        width: 25rem;
+        width: 24rem;
         height: 20rem;
         margin-top: -6rem;
+        margin-left: 6%;
         border-radius: 8px;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         background-color: white;
@@ -291,14 +285,20 @@ footer {
     }
 
     .container-texto-criptografado img {
-        max-width: auto;
+        max-width: 80%;
         max-height: auto;
         margin-top: 1%;
     }
 
     .container-texto-criptografado h1 {
-        font-size: 20px; /* Ajuste conforme necessário */
+        font-size: 20px; 
         margin-top: 10%;
+    }
+
+    .container-texto-criptografado p {
+        margin-top: 10%;
+        text-align: center;
+        font-size: 15px;
     }
 
     .botoes {
@@ -338,24 +338,50 @@ footer {
             
         }
         
-        .botao:hover {
+    .botao:hover {
             background: white;
             color: var(--Dark-blue-dark-blue-300, #0A3871);
             border: solid 1px var(--Dark-blue-dark-blue-300, #0A3871);
         }
         
-        button:disabled {
+    button:disabled {
             background-color: gray;
             border: solid 1px gray;
         }
         
-        button:disabled:hover {
+    button:disabled:hover {
             background-color: gray;
             color: white;
             border: solid 1px gray;
         }
 
+
+    footer {
+        display: flex;
+        background: var(--Light-blue-light-blue-100, #F3F5FC);
+        height: auto;
+        width: 100%;
+        color: var(--Dark-blue-dark-blue-300, #0A3871);
+        justify-content: center;
+            
+    }    
+
     .footer-content p {
-        max-width: 90%;
+        max-width: 100%;
+        width: 25rem;
+        padding: 8%;
     }
+
+    .redes-sociais {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -1rem 0 3rem 0;
+    }
+    
+    .redes-sociais li{
+        margin: 0 10px;
+    }
+    
 
