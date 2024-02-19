@@ -23,23 +23,25 @@ function validarTexto() {
     // Expressão regular para verificar se há letras maiúsculas ou caracteres especiais
     var regex = /^[A-Za-z][a-z\s]*$/;
     var botaoCriptografar = document.getElementById('criptografar');
+    var btDescriptografar = document.getElementById('descrip');
+
     if (!regex.test(texto)) {
         botaoCriptografar.disabled = true; 
     } else {
         botaoCriptografar.disabled = false;
     }
-    botaoCriptografar = document.getElementById('descrip');
-    if (!regex.test(texto) || onclick.criptografar()) {
-        botaoCriptografar.disabled = true; 
+    btDescriptografar = document.getElementById('descrip');
+    if (!regex.test(texto)) {
+        btDescriptografar.disabled = true; 
     } else {
-        botaoCriptografar.disabled = false;
+        btDescriptografar.disabled = false;
     }
 
     inputTexto.addEventListener('paste', function() {
         setTimeout(function() {
             texto = inputTexto.value;
             botaoCriptografar.disabled = !regex.test(texto);
-            botaoDescriptografar.disabled = !regex.test(texto);
+            btDescriptografar.disabled = !regex.test(texto);
         }, 0);
     });
     
@@ -70,7 +72,7 @@ function descriptografar() {
       inputTexto.value = textoCriptografia;
       document.getElementById("mensagemH1").innerText = mensagemDescripth1;
       document.getElementById("mensagemSpan").innerText = mensagemDescriptSpan;
-      document.getElementById('descrip').setAttribute('disabled',true);
+      
       
   }
 
