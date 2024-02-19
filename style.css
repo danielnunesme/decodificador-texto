@@ -273,7 +273,7 @@ footer {
     .container-input {
         width: 0px;
         margin-top: 2%;
-        margin-left: 2.5%;
+        margin-left: 2%;
         
         
     }
@@ -291,7 +291,7 @@ footer {
         width: 25rem;
         height: 20rem;
         margin-top: -6rem;
-        margin-left: 5%;
+        margin-left: 3%;
         border-radius: 8px;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         background-color: white;
