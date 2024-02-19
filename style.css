@@ -280,7 +280,7 @@ footer {
 
     .container-input textarea {
         
-        width: 24rem;
+        width: 24.4rem;
         height: 30rem; 
         font-size: 20px;
         border-radius: 8px;
@@ -288,7 +288,7 @@ footer {
     }
 
     .container-texto-criptografado {
-        width: 24rem;
+        width: 24.4rem;
         height: 20rem;
         margin-top: -6rem;
         margin-left: 5%;
